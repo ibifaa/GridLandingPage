@@ -26,7 +26,7 @@ main{
     grid-template-rows: (150px, auto);
     grid-gap: 20px; 
     grid-template-areas: 
-    "promotionImg       promotionImg        promotionImg"     
+    "promotionImg       promotionImg        aside"     
     "promotionTxt       promotionTxt        aside"
     "card1              card2               card3"; 
     
@@ -38,8 +38,9 @@ main{
     width: 100%;
     justify-content: space-between;
     margin: 0 auto;
-    font-size: 1.1rem;
-    margin-bottom: 2%;
+    font-size: 0.6rem;
+    margin-bottom: 5%;
+    align-items: center;
 }
 
 .flex{
@@ -55,9 +56,14 @@ a{
     color: black;
 }
 
+.brand img{
+    height: 20px;
+    width: 40px;
+}
+
 .nav-menu{
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 
@@ -96,7 +102,7 @@ a{
     grid-area: aside;
     background-color: #00001a;
     color: white;
-    padding: 7%;   
+    padding: 5% 7% ;   
     margin-bottom: 2%;
 }
 
@@ -152,6 +158,13 @@ hr{
 }
 
 .aside-text h4{
+    font-size: 0.7rem;
+    line-height: 1.5;
+    margin-bottom: 5%;
+    margin-right: 2%;
+}
+
+.aside-text p{
     font-size: 0.5rem;
     line-height: 1.5;
     margin-bottom: 5%;
@@ -159,13 +172,7 @@ hr{
     margin-right: 5%;
 }
 
-.aside-text h4{
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 5%;
-    color: #7c7880;
-    margin-right: 5%;
-}
+
 
 .card1{
     grid-area: card1;
