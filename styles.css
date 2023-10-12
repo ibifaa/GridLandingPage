@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* red: #f15d51 */
+/* dark-blue: #00001a */
+/* light-has: #dad8dc */
+
+.container{
+    box-shadow: 3px 5px 2px 5px rgb(110, 95, 95);
+    width: 80%;
+    margin: 2% auto;
+    padding: 1.5% 5%;
+}
+
+main{
+    
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (150px, auto);
+    grid-gap: 20px; 
+    grid-template-areas: 
+    "promotionImg       promotionImg        promotionImg"     
+    "promotionTxt       promotionTxt        aside"
+    "card1              card2               card3"; 
+    
+
+}
+
+ .navigation{
+    
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+}
+
+.flex{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.nav-menu{
+    align-items: center;
+    gap: 30px;
+}
+
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: #f15d51;
+}
+
+.hamburger{
+    display: none;
+    cursor:point;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px ;
+    margin: 5px auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: black;
+}
+
+.col{
+    align-items: center;
+}
+
+.promotionImg{
+    grid-area: promotionImg;
+    background-image: url("images/image-web-3-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: #00001a;
+    color: white;
+    padding: 7%;   
+    margin-bottom: 2%;
+}
+
+.aside h2{
+    margin-bottom: 5%;
+    color: #e69532;
+}
+
+.aside p{
+    font-size: 12px;
+    line-height: 2;
+    color: #dad8dc;
+}
+
+hr{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.promotionTxt{
+    grid-area: promotionTxt;
+    gap: 40px;
+    margin-bottom: 2%;
+    
+}
+.promotionTxt h1{
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.promotionImg p{
+    font-size: 0.5rem;
+    line-height: 4;
+}
+
+.promotionTxtSec{
+    padding-top: 5%;
+}
+
+.protextSec p{
+    font-size: 0.7rem;
+    line-height: 2;
+    margin-bottom: 5%;
+    color: #7c7880;
+    margin-right: 5%;
+}
+
+.promoBtn{
+    background-color: #f15d51;
+    font-size: 0.7rem;
+    padding: 2% 4%;
+    border: none;
+    font-weight: 400;
+    color: white;
+}
+
+.card1{
+    grid-area: card1;
+    margin-top: 3%;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
+
+
+.cardTxt{
+    padding-left:5%;
+    height: 60%;
+}
+
+.cardTxt h2{
+    font-size: 1.5rem;
+    color: #a4a0a8;
+    width: 40%;
+
+}
+
+.cardTxt h4{
+    font-size: 0.7rem;
+    /* font-weight: 400; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.cardTxt p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #a4a0a8;
+}
+
+.card-image img{
+    width: 110px;
+    height: 124px;
+}
+
+
+@media only screen and  (max-width:499px){
+    .container{
+        box-shadow: none;
+        padding: 2% 5%;
+    }
+    main{
+        grid-template-columns: (auto 1fr);
+        grid-template-rows: (6, 1fr);
+    grid-template-areas:
+    "promotionImg"
+    "promotionTxt"
+    "aside"
+    "card1"
+    "card2"
+     "card3"; 
+    }
+
+    .promotionImg{
+        grid-area: promotionImg;
+       
+    }
+
+    .promotionTxt{
+        grid-area: promotionTxt;
+        display: block;
+    }
+
+    .aside{
+        grid-area: aside;
+    }
+
+    .brand img{
+        width: 30px;
+        height: 20px;
+
+    }
+    .hamburger{
+        display:block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY() rotate(45deg);
+    }
+
+
+    .hamburger.active .bar:nth-child(3){
+        transform:translateY(8px) rotate(45);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #f15d51;
+        width: 100%;
+        text-align: left;
+        transition:0.3s
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+    
+    .card1, .card2, .card3{
+        width: 100%;
+    }
+
+    .cardTxt{
+        padding-left:5%;
+        height: 100%;
+    }
+}
+
+
+
+/* @media only screen and (min-width:500px) and (max-width:768px){
+    main{
+        display: grid;
+        grid-template-columns: (auto, auto auto);
+        grid-template-rows: (4,fr);
+        grid-gap: 20px; 
+        grid-template-areas: 
+       
+        "promotionImg        promotionImg  "
+        "promotionTxt       promotionTxt"
+        "aside             card1"
+        "card2            card3"          
+    }
+
+    .promotionImg{
+        grid-area: promotionImg;
+       
+    }
+
+    .promotionTxt{
+        grid-area: promotionTxt;
+        display: flex;
+    }
+
+    .aside{
+        grid-area: aside;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .aside-text{
+        display: flex;
+
+    }
+}  */
+
+
+
+
+
+
+/* 
+@media only screen and (max-width: 600px){
+    .container{
+        display: block;
+
+    }
+
+    .section{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 640x){
+    .container{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: (25% 25% 25%);
+        grid-template-rows: (150px, auto);
+        grid-gap: 20px; 
+        grid-template-areas: 
+        "nav            nav "
+        "display        display"     
+        "section         section"
+        "heading         cta"
+        "card1           card2 "
+        "card3"; 
+    
+    }
+    
+}   */
+
