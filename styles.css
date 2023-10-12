@@ -39,7 +39,7 @@ main{
     justify-content: space-between;
     margin: 0 auto;
     font-size: 0.6rem;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
     align-items: center;
 }
 
@@ -98,42 +98,19 @@ a{
     height: 150px;
 }
 
-.aside{
-    grid-area: aside;
-    background-color: #00001a;
-    color: white;
-    padding: 5% 7% ;   
-    margin-bottom: 2%;
-}
-
-.aside h2{
-    margin-bottom: 5%;
-    color: #e69532;
-}
-
-.aside p{
-    font-size: 12px;
-    line-height: 2;
-    color: #dad8dc;
-}
-
-hr{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
 .promotionTxt{
     grid-area: promotionTxt;
-    width: 100%;
-    margin-bottom: 2%;
     
 }
+
 .promoHeader{
     flex-basis: 600px;
 }
 .promotionTxt h1{
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 900;
-    line-height: 1.2;
+    line-height: 1.1;
+    font-family: 'Roboto';
 }
 
 .promotionTxtSec{
@@ -148,6 +125,26 @@ hr{
     margin-right: 1%;
 }
 
+
+
+
+.aside{
+    grid-area: aside;
+    background-color: #00001a;
+    color: white;
+    padding: 7% 7% 0 7%
+}
+
+
+.aside h2{
+    margin-bottom: 5%;
+    color: #e69532;
+}
+
+hr{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 .promoBtn{
     background-color: #f15d51;
     font-size: 0.5rem;
@@ -167,11 +164,10 @@ hr{
 .aside-text p{
     font-size: 0.5rem;
     line-height: 1.5;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     color: #7c7880;
-    margin-right: 5%;
+    /* margin-right: 5%; */
 }
-
 
 
 .card1{
@@ -201,21 +197,21 @@ hr{
 }
 
 .cardTxt h4{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     /* font-weight: 400; */
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
 .cardTxt p{
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     line-height: 1.5;
     color: #a4a0a8;
 }
 
 .card-image img{
-    width: 110px;
-    height: 124px;
+    width: 60px;
+    height: 80px;
 }
 
 
