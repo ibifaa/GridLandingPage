@@ -73,6 +73,7 @@ a{
 
 .nav-link:hover{
     color: #f15d51;
+    font-size: 14px;
 }
 
 .hamburger{
@@ -85,7 +86,7 @@ a{
     width: 25px;
     height: 3px ;
     margin: 5px auto;
-    -webkit-transition:0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.5s ease-in-out;
     background-color: black;
 }
@@ -247,8 +248,8 @@ hr{
     }
 
     .brand img{
-        width: 30px;
-        height: 20px;
+        width: 28px;
+        height: 19px;
 
     }
     .hamburger{
@@ -260,28 +261,28 @@ hr{
     }
 
     .hamburger.active .bar:nth-child(1){
-        transform:translateY() rotate(45deg);
+        transform:translateY(8px) rotate(45deg);
     }
 
 
     .hamburger.active .bar:nth-child(3){
-        transform:translateY(8px) rotate(45);
+        transform:translateY(-8px) rotate(-45deg);
     }
 
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 50px;
         gap: 0;
-        flex-direction: column;
-        background-color: #f15d51;
-        width: 100%;
+        flex-direction:column;
+        background-color: #fff;
+        width: 30%;
         text-align: left;
         transition:0.3s
     }
 
     .nav-item{
-        margin: 16px 0;
+        margin: 10px 0;
     }
 
     .nav-menu.active{
@@ -314,6 +315,7 @@ hr{
         "aside         card3"          
     }
 
+   
     .promotionImg{
         grid-area: promotionImg;
        
