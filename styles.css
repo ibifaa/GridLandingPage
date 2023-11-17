@@ -34,7 +34,7 @@ main{
 }
 
  .navigation{
-    
+
     width: 100%;
     justify-content: space-between;
     margin: 0 auto;
@@ -315,18 +315,35 @@ hr{
         "aside         card3"          
     }
 
-   
+   .container{
+    margin-top: 20px;
+   }
     .promotionImg{
         grid-area: promotionImg;
        
     }
 
+    .navigation{
+        position: fixed;
+    }
+
+    .nav-menu{
+        margin-right:150px
+    }
+    .navigation a{
+        float: left;
+    }
+
+    .promotionImg{
+        margin-top: 45px;
+    }
     .promotionTxt{
         grid-area: promotionTxt;
         display: flex;
     }
 
     .aside{
+        margin-top: 45px;
         grid-area: aside;
         grid-column-start: 1;
         grid-column-end: 2;
